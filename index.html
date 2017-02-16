@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Página Inicial</title>
+    <!-- Registro de estilos CSS na página -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fim dos css -->
+
+    <!-- Registro dos Javascripts da página -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+    <script type="text/javascript" src="js/validate_login.js"></script>
+    
+    <!-- Fim dos js -->
+
+    <title>Página Inicial</title>
 </head>
 <body>
-	<hgroup>
-	  <h1>Linguagem de Programação Web</h1>
-	  	<h3>By Jefferson Almeida</h3>
-	  	<a href="http://github.com/almeidajeff/lp_web_iesb"></a>
-	</hgroup>
-	<form>
-	  <div class="group">
-	    <input type="text"><span class="highlight"></span><span class="bar"></span>
-	    <label>Name</label>
-	  </div>
-	  <div class="group">
-	    <input type="email"><span class="highlight"></span><span class="bar"></span>
-	    <label>Email</label>
-	  </div>
-	  <button type="button" class="button buttonBlue">Subscribe
-	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-	  </button>
-	</form>
-	<footer>
-		<a href="http://iesb.br/" target="_blank">
-			<img src="img/logo_iesb.png">
-		</a>
-	</footer>
+    <hgroup>
+      <h1>Linguagem de Programação Web</h1>
+        <h3>By Jefferson Almeida</h3>
+        <a href="http://github.com/almeidajeff/lp_web_iesb"></a>
+    </hgroup>
+    <form>
+      <div class="group">
+        <input type="text" name="username" id="username";>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Username</label>
+      </div>
+      <div class="group">
+        <input type="password" name="password" id="password">
+        <span class="highlight"></span><span class="bar"></span>
+        <label>Password</label>
+      </div>
+      <button type="button" class="button buttonBlue" onclick="Login();">Subscribe
+        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+      </button>
+    </form>
+    <footer>
+        <a href="http://iesb.br/" target="_blank">
+            <img src="img/logo_iesb.png">
+        </a>
+    </footer>
 </body>
 </html>
