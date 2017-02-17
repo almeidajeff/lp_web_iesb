@@ -19,7 +19,7 @@ h3 { color: #D50000; }
 
 form {
 	width: 380px;
-	margin: 4em auto;
+	margin: 1em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
 	border: 1px solid #ebebeb;
@@ -46,6 +46,8 @@ input {
 
 input:focus { outline: none; }
 
+/* Icons */
+i {color: #000;}
 
 /* Label */
 
@@ -64,10 +66,10 @@ label {
 /* active */
 
 input:focus ~ label, input.used ~ label {
-	top: -20px;
-  transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
-	color: #4a89dc;
+ 	top: -20px;
+ 	transform: scale(.75); 
+ 	left: -2px;
+ 	color: #D32F2F;
 }
 
 
@@ -85,7 +87,7 @@ input:focus ~ label, input.used ~ label {
 	width: 0;
 	bottom: 1px; 
 	position: absolute;
-	background: #4a89dc; 
+	background: #D32F2F; 
 	transition: all 0.2s ease;
 }
 
@@ -122,7 +124,7 @@ input:focus ~ .highlight {
 /* Animations */
 
 @keyframes inputHighlighter {
-	from { background: #4a89dc; }
+	from { background: #D32F2F; }
 	to 	{ width: 0; background: transparent; }
 }
 
@@ -144,7 +146,7 @@ input:focus ~ .highlight {
   letter-spacing: 1px;
   background: transparent;
   border: 0;
-  border-bottom: 2px solid #3160B6;
+  border-bottom: 2px solid #B71C1C;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -153,12 +155,12 @@ input:focus ~ .highlight {
 
 /* Button modifiers */
 
-.buttonBlue {
-  background: #4a89dc;
-  text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+.buttonRed {
+  background: #E53935;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
-.buttonBlue:hover { background: #357bd8; }
+.buttonRed:hover { background: #B71C1C; }
 
 
 /* Ripples container */
@@ -216,7 +218,7 @@ footer p {
 }
 
 footer a {
-	color: #4a89dc;
+	color: #D32F2F;
 	text-decoration: none;
 	transition: all .2s ease;
 }
